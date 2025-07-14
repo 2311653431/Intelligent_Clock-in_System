@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttendenWin</class>
+ <widget class="QMainWindow" name="AttendenWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AttendenWin</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>731</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="showWidget">
+     <attribute name="title">
+      <string>考勤</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>471</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 255);
+background-color: rgb(255, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="RegisterWin" name="registWidget">
+     <attribute name="title">
+      <string>注册</string>
+     </attribute>
+    </widget>
+    <widget class="selectwin" name="selectWidget">
+     <attribute name="title">
+      <string>查询</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RegisterWin</class>
+   <extends>QWidget</extends>
+   <header>registerwin.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>selectwin</class>
+   <extends>QWidget</extends>
+   <header location="global">selectwin.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
